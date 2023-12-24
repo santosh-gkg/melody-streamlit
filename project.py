@@ -30,10 +30,10 @@ def main():
         song_name = st.text_input("Enter your prompt here:")
         result = generate_audio(song_name)
         st.audio(result, format="audio/wav", start_time=0)
-    if st.button("use your own lyrics"):
-        song_name = st.text_input("Enter your prompt here:")
-        result = generate_audio(song_name)
-        st.audio(result, format="audio/wav", start_time=0)
+    # if st.button("use your own lyrics"):
+    #     song_name = st.text_input("Enter your prompt here:")
+    #     result = generate_audio(song_name)
+    #     st.audio(result, format="audio/wav", start_time=0)
 
 def generate_audio(prompt):
     client = Client("https://suno-bark.hf.space/")
