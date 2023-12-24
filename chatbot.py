@@ -19,10 +19,10 @@ def lyrics_generator(prompt, user_key):
     
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "you are a lyrics writer for songs,your word limit to write a song is 30 words"},
-            {"role": "user", "content": "generate a song lyrics in 30 words for the promt"+prompt}
-        ]
+        messages = [
+    {"role": "system", "content": "You are a skilled lyrics writer for songs. Emphasize musical words, ensure rhyming, and create smooth word links. Your word limit for the song is 30 words."},
+    {"role": "user", "content": "Generate a song lyrics in 30 words for the prompt: " + prompt}
+]
     )
     return completion.choices[0].message.content
 
@@ -66,3 +66,4 @@ if user_key:
         greetings = "Enjoy your Melodified song!"+ "\n" +prompt
         st.text(greetings)
         message = st.chat_message("assistant")
+ 
