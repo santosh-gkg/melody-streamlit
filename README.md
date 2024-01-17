@@ -12,7 +12,7 @@ Melodify transforms your text prompts into beautifully crafted, custom musical c
 2. Click a button.
 3. Witness Melodify weave your words into a unique and personalized song.
 
-Explore the magic of Melodify in action: [Check it out here](https://lnkd.in/eSAxs62g) 🎧
+Explore the magic of Melodify in action: [Check it out here](https://melodify.streamlit.app) 🎧
 
 ## 🛠️ Tech Stack
 
